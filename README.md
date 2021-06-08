@@ -1,6 +1,9 @@
 # Amazon_Vine_Analysis
 
+
 ## Overview of Analysis
+
+The purpose of this analysis is to use the knowledge gained from this module of the cloud ETL process, and create an AWS RDS database with tables in pgAdmin. There are approximately 50 different datasets, each one containing reviews of a specific product, to chooe from. I decided to use the "Mobile Electronics" dataset for my analysis. With this dataset, PySpark will be used to perform the ETL process to extract the dataset, transform the data, connect to an AWS RDS instance, and then load the transformed data into pgAdmin. PySpark was then used again to analyze Amazon reviews written by members of the paid Vine program and can be used to determine if there are any bias toward favorable reviews form Vine members from the selected dataset. 
 
 
 ## Results
@@ -27,3 +30,7 @@ From the excecuted code above, it shows that only 25% of the Vine reviews were 5
 
 
 ## Summary
+
+What the results seem to suggest is that the Vine reviews have a smaller percentage of 5 star reviews (25%) compared to the percentage of non-Vine 5 star reviews (49.53%). The Amazon Vine program is a program where the most trusted reviewers on Amazon are invited to post reviews on new and pre-released items to help provide feedback that will assist other customers in making informed purchase decisions. Amazon only invites reviewers that have a high reviewer rank, which is based on the quality and helpfulness of all their reviews. Based on the criteria needed to be invited to the Amazon Vine program, it seems that the reviewers they select are credible in Amazon's eyes to review these new products. From the 5 star reviews for the Vine and non-Vine reviews, there doesn't seem to be any sign that there is a bias towards favorable reviews from Vine members. Actually, the results show that the Vine members are less likely to rate something as a 5 star then non-Vine members. So from this dataset, it apppears that Vine members are more critical of what they review instead of showing a favorable bias to what they review. 
+
+
